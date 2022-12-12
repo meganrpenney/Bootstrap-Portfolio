@@ -1,49 +1,161 @@
-/* Text */
-h1, h2, h3 , h4, h5, h6 {
+body {
+    background-image: url("../images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg")
+}
+    
+    
+    
+    /* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Anton', sans-serif;
-  }
-  p {
+}
+
+p {
     font-family: 'Jura', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    background-color:#ee4e34;
+}
+
+.container-fluid {
+    /*display: flex;
+   justify-content: space-around;*/
+
+}
+/* Navigation bar */
+.titlecolour{
+    color: #ee4e34;
+}
+
+
+/* Navigation links */
+
+.navbar {
+    background-color: #424d43 !important;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url("../images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ee4e34;
+}
+
+.second-lead {
+    font-size: 36px;
+}
+
+/* Cards */
+
+.cardContainer {
+
+
+}
+.container {
+    background-color: #f7c5cc;
+}
+.card {
+    position: relative;
+    width: 50%;
   }
   
-  html{
-    scroll-behavior: smooth;;
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .card-body {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
 
-  /* Navigation bar */
-  
-  .customNav {
-    position: fixed;
-    width: 100%;
-    background: url("../images/transparency.png");
-    background-color: transparent !important;
-    background-size: cover;
-    z-index: 10;
-  }
-  .navbar-nav {
-    margin-left: auto;
-    margin-right: 0 !important;
-  }
-  .navbar-brand img {
-    padding-right: 15px;
-    width: 65px;
-  }
-  .nav-item {
-    margin: 0px 15px;
+.card:hover .image {
+    opacity: 0.3;
   }
   
-  
-  /* Navigation links */
-  .customNav a {
-    color: white !important;
-  }
-  .navCTA {
-    font-size: 15px;
+  .card:hover .card-body {
+    opacity: 1;
   }
   
-  
-.subject-titles {
+  .text {
+    background-color: #ee4e34;
+    color: white;
+    font-size: 16px;
+    padding: ;
+  }
+
+  .subject-titles {
+    color: #ee4e34;
     display: flex;
-    justify-items: center;
-    
+    justify-content: center;
+
 }
+
+/* Skills */
+
+.skillstext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* About Me */
+
+.aboutmetext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Contact Me */
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Custom Classes */
+
+
+
+
+
+
